@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65624124828853918}
   m_Layer: 0
   m_Name: Crystal_1
-  m_TagString: Untagged
+  m_TagString: Spikes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,13 +34,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1848047028981570}
-  m_LocalRotation: {x: 0, y: 0, z: -0.18257873, w: 0.98319125}
-  m_LocalPosition: {x: -3.26, y: -4.42, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.018783867, w: 0.9998236}
+  m_LocalPosition: {x: 12.72, y: 14.69, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -21.04}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.153}
 --- !u!65 &65624124828853918
 BoxCollider:
   m_ObjectHideFlags: 1
