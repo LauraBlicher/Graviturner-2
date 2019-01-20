@@ -11,6 +11,7 @@ public class HammerCrystalScript : MonoBehaviour {
     public UnityEngine.UI.Text winText;
     public UnityEngine.UI.Image buttonImage;
 	private bool hasWon;
+	public float winDelay = 1.5f;
 
 	void Start()
 	{
@@ -43,9 +44,14 @@ public class HammerCrystalScript : MonoBehaviour {
 	public void CrystalBroke()
 	{
 		npc.GetComponent<Animator> ().SetBool ("isFree", true);
+		StartCoroutine (WinScreen ());
+	}
+
+	IEnumerator WinScreen() 
+	{
+		yield return new WaitForSeconds (winDelay);
 		winButton.enabled = true;
 		winText.enabled = true;
 		buttonImage.enabled = true;
 	}
-
 }

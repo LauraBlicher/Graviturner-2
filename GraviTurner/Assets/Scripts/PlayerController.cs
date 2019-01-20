@@ -8,15 +8,17 @@ public class PlayerController : MonoBehaviour {
     private bool isAirborne;
     private Rigidbody rb;
     public float movementSpeed = 5f, jumpForce = 5f;
-    private GameObject visual;
-    private Animator anim;
+    private GameObject visual, visualInverse;
+    private Animator anim, animInverse;
 
     	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
         isDead = false;
         visual = transform.Find("Visual").gameObject;
+		visualInverse = transform.Find("VisualInverse").gameObject;
         anim = visual.GetComponent<Animator>();
+		animInverse = visualInverse.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -33,25 +35,32 @@ public class PlayerController : MonoBehaviour {
                 isAirborne = true;
                 anim.SetTrigger("Jumping");
                 anim.ResetTrigger("Landed");
+				animInverse.SetTrigger("Jumping");
+				animInverse.ResetTrigger("Landed");
             }
         }
         if (Input.GetAxis("Horizontal") != 0)
         {
             anim.SetBool("isRunning", true);
+			animInverse.SetBool("isRunning", true);
         }
         else
         {
             anim.SetBool("isRunning", false);
+			animInverse.SetBool("isRunning", false);
         }
         if(Input.GetAxis("Horizontal") < 0)
         {
             visual.GetComponent<SpriteRenderer>().flipX = true;
+			visualInverse.GetComponent<SpriteRenderer>().flipX = true;
         }
         else if (Input.GetAxis("Horizontal") > 0)
         {
             visual.GetComponent<SpriteRenderer>().flipX = false;
+			visualInverse.GetComponent<SpriteRenderer>().flipX = false;
         }
         anim.SetFloat("upwardsMomentum", transform.InverseTransformDirection(rb.velocity).y);
+		animInverse.SetFloat("upwardsMomentum", transform.InverseTransformDirection(rb.velocity).y);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -60,6 +69,7 @@ public class PlayerController : MonoBehaviour {
         {
             isAirborne = false;
             anim.SetTrigger("Landed");
+			animInverse.SetTrigger("Landed");
         }
     }
     void OnTriggerEnter(Collider other)
@@ -69,6 +79,7 @@ public class PlayerController : MonoBehaviour {
             isDead = true;
             Debug.Log("died");
             anim.SetBool("isHit", true);
+			animInverse.SetBool("isHit", true);
 
         }
     }
