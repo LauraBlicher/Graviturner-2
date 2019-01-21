@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EventManagerScript : MonoBehaviour {
 
@@ -26,8 +27,9 @@ public class EventManagerScript : MonoBehaviour {
         {
             if (Input.GetButtonDown("Respawn"))
             {
-              player = Instantiate(newPlayer, respawn.position, respawn.rotation);
-              readyToRespawn = false;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+              //player = Instantiate(newPlayer, respawn.position, respawn.rotation);
+              //readyToRespawn = false;
             } 
         } 
 	}
