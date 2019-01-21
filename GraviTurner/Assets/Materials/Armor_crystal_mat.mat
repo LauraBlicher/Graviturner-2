@@ -90,7 +90,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_950F23BE: {r: 1, g: 1, b: 1, a: 0}
+    - Color_950F23BE: {r: 1.2375833, g: 0.9048369, b: 0.9892793, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
