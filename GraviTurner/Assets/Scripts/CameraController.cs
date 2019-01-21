@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour {
         if (EventManagerScript.player != null)
         {
             dist = Vector3.Distance(transform.position, EventManagerScript.player.transform.position);
-            GetComponent<Camera>().orthographicSize = dist - 5f;
+            GetComponent<Camera>().orthographicSize = dist - 4f;
             transform.position = Vector3.Lerp(transform.position, new Vector3(EventManagerScript.player.transform.position.x, EventManagerScript.player.transform.position.y, -10f), Time.deltaTime);
             transform.rotation = EventManagerScript.player.transform.rotation;
         }
