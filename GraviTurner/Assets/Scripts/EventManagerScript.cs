@@ -13,7 +13,7 @@ public class EventManagerScript : MonoBehaviour {
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         respawn = GameObject.FindGameObjectWithTag("Respawn").transform;
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -28,8 +28,8 @@ public class EventManagerScript : MonoBehaviour {
             {
               player = Instantiate(newPlayer, respawn.position, respawn.rotation);
               readyToRespawn = false;
-            }
-        }
+            } 
+        } 
 	}
     IEnumerator PlayerDeath()
     {
