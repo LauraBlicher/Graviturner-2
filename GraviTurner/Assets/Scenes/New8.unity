@@ -6863,7 +6863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   referenceObject: {fileID: 0}
-  parallaxFactor: 0.7
+  parallaxFactor: 1
 --- !u!4 &1946448178 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4658299691011964, guid: 42796a06a02cd3c449ac7f7a05270be0,
