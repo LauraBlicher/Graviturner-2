@@ -77,7 +77,10 @@ public class PlayerController : MonoBehaviour {
         if (other.transform.tag == "Spikes")
         {
             isDead = true;
+            GetComponent<Collider>().enabled = false;
             Debug.Log("died");
+            //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+            GetComponent<Rigidbody>().drag = 7;
             anim.SetBool("isHit", true);
 			animInverse.SetBool("isHit", true);
 
