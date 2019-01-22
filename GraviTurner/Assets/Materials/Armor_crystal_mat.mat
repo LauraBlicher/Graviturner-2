@@ -91,6 +91,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_950F23BE: {r: 1.2375833, g: 0.9048369, b: 0.9892793, a: 1}
+    - Color_995FF6FD: {r: 1.1022236, g: 0.9814312, b: 1.2311444, a: 0}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
