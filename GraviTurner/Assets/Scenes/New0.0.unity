@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1323,6 +1323,26 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114439934745211680, guid: 42f56017c04e0e843b88c5ed6051155f,
+        type: 2}
+      propertyPath: winButton
+      value: 
+      objectReference: {fileID: 831974790}
+    - target: {fileID: 114439934745211680, guid: 42f56017c04e0e843b88c5ed6051155f,
+        type: 2}
+      propertyPath: buttonImage
+      value: 
+      objectReference: {fileID: 831974791}
+    - target: {fileID: 114439934745211680, guid: 42f56017c04e0e843b88c5ed6051155f,
+        type: 2}
+      propertyPath: winText
+      value: 
+      objectReference: {fileID: 878263832}
+    - target: {fileID: 114439934745211680, guid: 42f56017c04e0e843b88c5ed6051155f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42f56017c04e0e843b88c5ed6051155f, type: 2}
   m_IsPrefabAsset: 0
@@ -1501,6 +1521,24 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42c858057bd6fa946b0be44876569677, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &831974790 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114005035572181436, guid: 1d0ceb513ca47fd4caa75e29cb896fe8,
+    type: 2}
+  m_PrefabInternal: {fileID: 273655886}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &831974791 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114562038533772648, guid: 1d0ceb513ca47fd4caa75e29cb896fe8,
+    type: 2}
+  m_PrefabInternal: {fileID: 273655886}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &878263832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114666106492959030, guid: 1d0ceb513ca47fd4caa75e29cb896fe8,
+    type: 2}
+  m_PrefabInternal: {fileID: 273655886}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &945839264
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,10 +2153,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4591505837782090, guid: 2611585950bcc4b999d54e09dfa5fad2, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -201.732
-      objectReference: {fileID: 0}
+    - target: {fileID: 114710585279959494, guid: 2611585950bcc4b999d54e09dfa5fad2,
+        type: 2}
+      propertyPath: winButton
+      value: 
+      objectReference: {fileID: 831974790}
+    - target: {fileID: 114710585279959494, guid: 2611585950bcc4b999d54e09dfa5fad2,
+        type: 2}
+      propertyPath: winText
+      value: 
+      objectReference: {fileID: 878263832}
+    - target: {fileID: 114710585279959494, guid: 2611585950bcc4b999d54e09dfa5fad2,
+        type: 2}
+      propertyPath: buttonImage
+      value: 
+      objectReference: {fileID: 831974791}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2611585950bcc4b999d54e09dfa5fad2, type: 2}
   m_IsPrefabAsset: 0

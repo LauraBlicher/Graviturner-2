@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -206,6 +206,21 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -123.841
       objectReference: {fileID: 0}
+    - target: {fileID: 114710585279959494, guid: 2611585950bcc4b999d54e09dfa5fad2,
+        type: 2}
+      propertyPath: winButton
+      value: 
+      objectReference: {fileID: 1963589400}
+    - target: {fileID: 114710585279959494, guid: 2611585950bcc4b999d54e09dfa5fad2,
+        type: 2}
+      propertyPath: winText
+      value: 
+      objectReference: {fileID: 1059413030}
+    - target: {fileID: 114710585279959494, guid: 2611585950bcc4b999d54e09dfa5fad2,
+        type: 2}
+      propertyPath: buttonImage
+      value: 
+      objectReference: {fileID: 1963589401}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2611585950bcc4b999d54e09dfa5fad2, type: 2}
   m_IsPrefabAsset: 0
@@ -1177,6 +1192,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4609627259705882, guid: 130037b8ce1fd1349803e264fb78f199,
     type: 2}
   m_PrefabInternal: {fileID: 19660713}
+--- !u!114 &1059413030 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114666106492959030, guid: 1d0ceb513ca47fd4caa75e29cb896fe8,
+    type: 2}
+  m_PrefabInternal: {fileID: 200125346}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1159236656 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1721120669666012, guid: cfaa273476f8acc4aab24089808a7b7b,
@@ -4430,6 +4451,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 1, z: 1}
   m_Center: {x: -0.5, y: -1.5, z: 0}
+--- !u!114 &1963589400 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114005035572181436, guid: 1d0ceb513ca47fd4caa75e29cb896fe8,
+    type: 2}
+  m_PrefabInternal: {fileID: 200125346}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1963589401 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114562038533772648, guid: 1d0ceb513ca47fd4caa75e29cb896fe8,
+    type: 2}
+  m_PrefabInternal: {fileID: 200125346}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1993804962
 Prefab:
   m_ObjectHideFlags: 0
