@@ -12,11 +12,14 @@ public class HammerCrystalScript : MonoBehaviour {
     public UnityEngine.UI.Image buttonImage;
 	private bool hasWon;
 	public float winDelay = 1.5f;
+    private AudioSource aSource;
+    public AudioClip hammerSound;
 
 	void Start()
 	{
 		npc = GameObject.FindGameObjectWithTag ("NPC");
-	}
+        aSource = GetComponent<AudioSource>();
+    }
 
     void OnTriggerStay(Collider other)
     {
@@ -37,6 +40,7 @@ public class HammerCrystalScript : MonoBehaviour {
         if (other.tag == "Hammer")
         {
             hasHammer = true;
+            aSource.PlayOneShot(hammerSound);
             Destroy(other.gameObject);
         }
     }

@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour {
     public float movementSpeed = 5f, jumpForce = 5f;
     private GameObject visual, visualInverse;
     private Animator anim, animInverse;
+    private AudioSource aSource;
+    public AudioClip landing,jump,death;
 
     	// Use this for initialization
 	void Start () {
@@ -19,7 +21,8 @@ public class PlayerController : MonoBehaviour {
 		visualInverse = transform.Find("VisualInverse").gameObject;
         anim = visual.GetComponent<Animator>();
 		animInverse = visualInverse.GetComponent<Animator>();
-	}
+        aSource = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -31,6 +34,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (Input.GetButtonDown("Jump"))
             {
+                aSource.PlayOneShot(jump);
                 rb.AddRelativeForce(new Vector3(0, jumpForce, 0),ForceMode.Impulse);
                 isAirborne = true;
                 anim.SetTrigger("Jumping");
@@ -70,6 +74,7 @@ public class PlayerController : MonoBehaviour {
             isAirborne = false;
             anim.SetTrigger("Landed");
 			animInverse.SetTrigger("Landed");
+            aSource.PlayOneShot(landing);
         }
     }
     void OnTriggerEnter(Collider other)
@@ -77,6 +82,7 @@ public class PlayerController : MonoBehaviour {
         if (other.transform.tag == "Spikes")
         {
             isDead = true;
+            aSource.PlayOneShot(death);
             GetComponent<Collider>().enabled = false;
             Debug.Log("died");
             //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
@@ -85,7 +91,7 @@ public class PlayerController : MonoBehaviour {
 			animInverse.SetBool("isHit", true);
 
         }
-    }
         
+    }
 
-}
+ }
