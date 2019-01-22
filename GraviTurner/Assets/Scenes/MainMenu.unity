@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9421875712ecb9e45a114f30fecd752c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: New0.0
+  sceneToLoad: Lonnie
 --- !u!1001 &1637996060
 Prefab:
   m_ObjectHideFlags: 0
