@@ -588,6 +588,24 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d0ceb513ca47fd4caa75e29cb896fe8, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &273655887 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114666106492959030, guid: 1d0ceb513ca47fd4caa75e29cb896fe8,
+    type: 2}
+  m_PrefabInternal: {fileID: 273655886}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &273655888 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114005035572181436, guid: 1d0ceb513ca47fd4caa75e29cb896fe8,
+    type: 2}
+  m_PrefabInternal: {fileID: 273655886}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &273655889 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114562038533772648, guid: 1d0ceb513ca47fd4caa75e29cb896fe8,
+    type: 2}
+  m_PrefabInternal: {fileID: 273655886}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &277793993
 Prefab:
   m_ObjectHideFlags: 0
@@ -7864,6 +7882,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114439934745211680, guid: 42f56017c04e0e843b88c5ed6051155f,
+        type: 2}
+      propertyPath: winButton
+      value: 
+      objectReference: {fileID: 273655888}
+    - target: {fileID: 114439934745211680, guid: 42f56017c04e0e843b88c5ed6051155f,
+        type: 2}
+      propertyPath: winText
+      value: 
+      objectReference: {fileID: 273655887}
+    - target: {fileID: 114439934745211680, guid: 42f56017c04e0e843b88c5ed6051155f,
+        type: 2}
+      propertyPath: buttonImage
+      value: 
+      objectReference: {fileID: 273655889}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42f56017c04e0e843b88c5ed6051155f, type: 2}
   m_IsPrefabAsset: 0

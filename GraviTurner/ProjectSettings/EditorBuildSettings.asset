@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Level1.unity
     guid: f264ae1fb50acb84cafaeefa17bcee11
+  - enabled: 1
+    path: Assets/Scenes/Lonnie.unity
+    guid: 70d582aa1978de14ab7ca4114e02e659
   m_configObjects: {}
